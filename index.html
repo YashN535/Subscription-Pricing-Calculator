@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Pricing Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <h1>Subscription Pricing Calculator</h1>
+
+      <label for="productType">Product Type:</label>
+      <select id="productType">
+        <option value="selectproducttype">Select Product Type</option>
+        <option value="saas">SaaS</option>
+        <option value="mobile">Mobile App</option>
+        <option value="desktop">Desktop Software</option>
+      </select>
+
+      <label for="developmentCost">Total Development Cost (₹):</label>
+      <input
+        type="number"
+        id="developmentCost"
+        placeholder="Enter total development cost"
+      />
+
+      <label for="targetUsers">Target Number of Users (Year 1):</label>
+      <input
+        type="number"
+        id="targetUsers"
+        placeholder="Enter target number of users"
+      />
+
+      <label for="competitorPrice"
+        >Average Competitor Price (₹ per month):</label
+      >
+      <input
+        type="number"
+        id="competitorPrice"
+        placeholder="Enter competitor price"
+      />
+
+      <button onclick="calculatePricing()">Calculate Price</button>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
